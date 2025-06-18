@@ -82,9 +82,26 @@ label[for="bt_menu"] {
     z-index: 1000; /* Garante que fique acima de outros elementos */
 }
 
+.Reggae{
+    display: none; /* Escondido por padrão */
+    position: relative;
+    top: 100%; /* Posiciona abaixo do item pai */
+    left: 0;
+    background-color: #222; /* Preto mais claro */
+    min-width: 200px;
+     /* Garante que fique acima de outros elementos */
+}
 /* Itens dos submenus */
 .menu ul ul li {
     border-bottom: 1px solid #333; /* Divisória sutil */
+}
+
+.ReggaeCantor:hover {
+    background-color: #aaa;
+    position: relative;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
 }
 
 /* Links dos submenus */
@@ -92,6 +109,13 @@ label[for="bt_menu"] {
     padding: 12px 20px;
     color: white;
     display: block;
+    text-decoration: none;
+}
+.menu ul ul li a:onclick {
+    padding: 12px 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
 }
 
 /* Mostra submenu quando o item pai recebe hover */
