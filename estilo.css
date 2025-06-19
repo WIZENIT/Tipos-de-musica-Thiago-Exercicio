@@ -12,7 +12,11 @@
 /* Estilos gerais do corpo da página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #111; /* Fundo preto escuro */
+    background-color: #573280;
+    background-image: url(images/musicafundo3.jpg);
+    background-size:124%;
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
     color: #eee; /* Texto claro para contraste */
     line-height: 1.6; /* Espaçamento entre linhas */
 }
@@ -39,15 +43,15 @@ label[for="bt_menu"] {
 
 /* Container principal do menu */
 .menu {
-    background-color: #000; /* Preto puro */
+    background-color: #3b0c4b; /* Preto puro */
     width: 100%;
 }
 
 /* Lista não ordenada do menu */
 .menu ul {
     list-style: none; /* Remove marcadores de lista */
-    margin: 0;
-    padding: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     display: flex; /* Layout flexível */
 }
 
@@ -63,45 +67,27 @@ label[for="bt_menu"] {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s; /* Transição suave */
+    transition: background 0.3s; 
 }
 
 /* Efeito hover nos links do menu */
 .menu > ul > li > a:hover {
-    background-color: #222; /* Preto mais claro */
+    background-color: #00000091; /* Preto mais claro */
 }
 
-/* Submenus (dropdown) */
 .menu ul ul {
-    display: none; /* Escondido por padrão */
+    display: none; 
     position: absolute;
-    top: 100%; /* Posiciona abaixo do item pai */
+    top: 100%; 
     left: 0;
-    background-color: #222; /* Preto mais claro */
+    background-color: #3b0c4b; 
     min-width: 200px;
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    z-index: 1000; 
 }
 
-.Reggae{
-    display: none; /* Escondido por padrão */
-    position: relative;
-    top: 100%; /* Posiciona abaixo do item pai */
-    left: 0;
-    background-color: #222; /* Preto mais claro */
-    min-width: 200px;
-     /* Garante que fique acima de outros elementos */
-}
 /* Itens dos submenus */
 .menu ul ul li {
     border-bottom: 1px solid #333; /* Divisória sutil */
-}
-
-.ReggaeCantor:hover {
-    background-color: #aaa;
-    position: relative;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
 }
 
 /* Links dos submenus */
@@ -111,11 +97,71 @@ label[for="bt_menu"] {
     display: block;
     text-decoration: none;
 }
-.menu ul ul li a:onclick {
+.menu ul ul li a:hover {
+    padding: 12px 25px;
+    background-color: #0000007e;
+}
+
+.cabeca{
+    padding: 12px 20px 12px 20px ;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cabeca:hover{
+    background-color: #aaaa;
+}
+
+.categoria{
     padding: 12px 20px;
     color: white;
     display: block;
     text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.categoria:hover{
+    background-color: #aaaa;
+}
+
+.home{
+    margin: 0;
+    padding: 12px 20px 12px 20px ;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.selecao{
+    font-size: 20px;
+    padding: 0px 0px 12px 15px;
+    margin: 0;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.texto{
+    font-size: 14px;
+    padding: 0px 0px 12px 15px;
+    margin: 0;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.texto-musica{
+    font-size: 14px;
+    padding: 0px 0px 12px 15px;
+    margin: 0;
+    color: #FFF;
+    text-decoration: underline;
 }
 
 /* Mostra submenu quando o item pai recebe hover */
@@ -129,10 +175,10 @@ label[for="bt_menu"] {
 
 /* Container do conteúdo principal */
 .content {
-    padding: 20px;
+    padding: 20px 20px 20px 125px;
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #222; /* Fundo preto */
+    background-color: #9696df; /* Fundo preto */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Sombra mais escura */
 }
@@ -142,7 +188,7 @@ label[for="bt_menu"] {
     text-align: center;
     margin-bottom: 30px;
     color: #fff; /* Branco puro */
-    padding-top: 20px;
+    padding: 30px 9% 0px 0px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra de texto */
 }
 
@@ -153,10 +199,10 @@ label[for="bt_menu"] {
 /* Grid container para os produtos */
 .boxes-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    grid-template-columns: repeat(3, 303px); /* 4 colunas */
     gap: 20px; /* Espaço entre os itens */
-    width: 100%;
-    padding: 20px;
+    width: 83%;
+    padding: 20px 0 200px 0;
 }
 
 /* ============================================= */
@@ -165,12 +211,13 @@ label[for="bt_menu"] {
 
 /* Card de produto individual */
 .product-box {
-    background: #333; /* Cinza escuro */
+    background: #686174;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra escura */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
     border: 1px solid #444; /* Borda sutil */
+    text-decoration: none;
 }
 
 /* Efeito hover no card */
@@ -307,7 +354,7 @@ label[for="bt_menu"] {
 .slide {
     flex: 0 0 300px;
     scroll-snap-align: start;
-    background: #333;
+    background: #573280;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
@@ -381,7 +428,7 @@ label[for="bt_menu"] {
 /* ============================================= */
 
 .digital-products {
-    background-color: #111;
+    background-color: #573280;
     padding: 40px 0;
     margin-top: 0;
     width: 100%;
@@ -395,6 +442,7 @@ label[for="bt_menu"] {
     padding: 0 50px;
 }
 
+
 .slider {
     display: flex;
     overflow-x: auto;
@@ -404,17 +452,27 @@ label[for="bt_menu"] {
     gap: 20px;
     padding: 20px 10px;
     scrollbar-width: none;
+    transition: transform 0.3s ease;
 }
 
 .slide {
-    flex: 0 0 calc(25% - 15px); /* 4 slides visíveis por vez */
+    flex: 0 0 calc(25% - 15px);
     scroll-snap-align: start;
-    background: #333;
+    background: #686174;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
-    min-width: 280px; /* Largura mínima para cada slide */
+    min-width: 280px;
+}
+
+.arrow_esq:hover{
+    padding: 0 6px 0 0px;
+    
+}
+
+.arrow_dir:hover{
+    padding: 0 0px 0 6px;
 }
 
 /* Ajustes para responsividade */
